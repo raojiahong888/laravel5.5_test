@@ -24,4 +24,9 @@ class IndexController extends Controller
         $res = $member_service->memberInfo();
         return $res;
     }
+
+    public function sendSms()
+    {
+        return '短信发送';
+    }
 }
