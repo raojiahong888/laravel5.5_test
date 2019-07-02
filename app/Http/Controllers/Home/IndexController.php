@@ -29,4 +29,10 @@ class IndexController extends Controller
     {
         return '短信发送';
     }
+
+    public function getFirstChar()
+    {
+        $simple = firstpinyin('泸州州工业');
+        return $simple;
+    }
 }

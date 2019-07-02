@@ -23,4 +23,5 @@ Route::group(['namespace'=>'Home','prefix'=>'home'],function (){
     Route::get('/','IndexController@index');
     Route::get('memberInfo','IndexController@memberInfo');
     Route::get('sendSms','IndexController@sendSms');
+    Route::get('getFirstChar','IndexController@getFirstChar');
 });
