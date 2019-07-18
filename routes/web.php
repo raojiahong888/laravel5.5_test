@@ -24,4 +24,9 @@ Route::group(['namespace'=>'Home','prefix'=>'home'],function (){
     Route::get('memberInfo','IndexController@memberInfo');
     Route::get('sendSms','IndexController@sendSms');
     Route::get('getFirstChar','IndexController@getFirstChar');
+    Route::get('getOldDay','IndexController@getOldDay');
+    Route::get('setRedis','IndexController@setRedis');
+    Route::get('user/{id}','IndexController@userInfo')->where('id', '[0-9]+'); // 正则约束传入的id
+    Route::get('setNxTest/{id?}','IndexController@setNxTest');
+    Route::get('getReferer','IndexController@getReferer');
 });
